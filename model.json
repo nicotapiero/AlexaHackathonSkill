@@ -1,0 +1,72 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "hackathon skill",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "OnboardingDateIntent",
+                    "slots": [
+                        {
+                            "name": "event",
+                            "type": "ONBOARDING_EVENT"
+                        }
+                    ],
+                    "samples": [
+                        "when will i recieve a {event}",
+                        "when will I have a {event}",
+                        "when can i expect an {event}",
+                        "when should i expect an {event}",
+                        "when should I expect a {event}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ONBOARDING_EVENT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "i-9 verification"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "introduction from my manager"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "background check"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
