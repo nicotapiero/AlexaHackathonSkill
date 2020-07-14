@@ -163,7 +163,7 @@ const OnboardingDateIntent_Handler =  {
         const responseBuilder = handlerInput.responseBuilder;
         let sessionAttributes = handlerInput.attributesManager.getSessionAttributes();
 
-        let say = 'Hello from OnboardingDateIntent. ';
+        let say = '';//'Hello from OnboardingDateIntent. ';
 
         let slotStatus = '';
         let resolvedSlot;
