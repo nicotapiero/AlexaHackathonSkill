@@ -33,6 +33,7 @@ Note: Current name of skill is "hackathon skill" so you should start it with "st
 * index.js
     * Has the processing code, most of the code was generated in alexa.design/codegenerator (takes in your JSON of intents and created boilerplate code, really nice site)
         * Remember if you use this to add the changes in the index.js, like the deleting the import for http and const onboardingEvents = require('./onboardingevents.js');
+    * If you need new dependecies for making HTTP requests or something, just add them to package.json
 
 #### Basic code editing stucture:
 * Create a new intent, add appropriate sample statements to train the model
